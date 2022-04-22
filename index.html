@@ -46,12 +46,12 @@
             <p dir = "rtl">אהלן אני מילר</p>
         </td>
         <td class="rightPicture">
-            <img src="pic1.jpeg">
+            <img src="pic1.jpeg" class="tablePicture">
         </td>
     </tr>
     <tr>
         <td class="leftPicture">
-            <img src="pic2.jpeg">
+            <img src="pic2.jpeg" class="tablePicture">
         </td>
         <td class="rightText">
             <p dir = "rtl">אהלן אני מילר</p>
@@ -62,13 +62,13 @@
             <p dir = "rtl">אהלן אני מילר</p>
         </td>
         <td class="rightPicture">
-            <img src="pic3.jpeg">
+            <img src="pic3.jpeg" class="tablePicture">
         </td>
         
     </tr>
     <tr>
         <td class="leftPicture">
-            <img src="pic4.jpeg">
+            <img src="pic4.jpeg" class="tablePicture">
         </td>
         <td class="rightText">
             <p dir = "rtl">אהלן אני מילר</p>
@@ -109,24 +109,29 @@
 <br/>
 <br/>
 <h1>Q&A</h1>
+<p dir="rtl">
+    ההבדלים בין web1, web2 ו-web3 הם:
+    <ol dir="rtl">
+        <li>בעוד שב-web 1.0 המשמתשים יכלו רק לקרוא אתרים ותכנים, ב-web 2.0 הם גם יכלו ליצור תכנים ולעלותם לרשת. בנוסף על כך, ב-web 3.0 המשתמשים יכולים להריץ אפליקציות ובנוסף לחבר בין מאגרי מידע</li>
+        <li>ב web 1.0 היו מיליוני משתמשים, ב-web 2.0 היו מיליארדי משתמשים, וב-web 3.0 יש כיום טריליוני משתמשים</li>
+        <li>ב web 1.0 המתשמשים צורכים מידע שנוצר ע״י החברות שהאתר הנגלש נמצא בבעלותם, ב-web 2.0 המתשמשים צורכים בנוסף גם מידע שנוצר ע״י משתמשים אחרים, שחברים בקהילה המשוייכת לאתר, וב-web 3.0 - המשתמשים יכולים לגלוש לאתר ולצרוך מידע מכל האינטרנט - זאת בעקבות שיתופיות המידע ב-web</li>
+    </ol>
+</p>
+<p dir="rtl">
+    <br>
+    דוגמא להבדל בין גרסאות ה-web היא כאשר משתמש רוצה לחפש מידע על אירוע מסויים שהתרחש בעולם. ב-web 1.0, המשתמש ימצא מידע על האירוע באתר חדשות, בין אם ע״י חיפוש במנוע חיפוש או ע״י גישה ישירה לאתר החדשות. המידע אותו הוא יקבל תלוי במה שחברת החדשות תרצה לספק ויכול להיות מוטה.
+    <br>
+    ב-web 2.0, המשתמש יכול לגשת לבלוגים ולאתרים שפתוחים לשיתוף מידע של כלל המשתמשים, כגון ויקיפדיה. כך הוא יוכל לקבל גם תוכן שלא נוצר ע״י חברה מסויימת, אלא תוכן מאנשים אחרים ברחבי העולם, וכך הוא יחשף לדעות שונות.
+    <br>
+    ב-web 3.0, עקב שיתוף המידע ברחבי האינטרנט, המשתמש יוכל לגשת לאתרים שמסתמכים על כמה מקורות מידע שונים, וגם על מידע שמשתמשים העלו, ובכך הוא יוכל לקבל מידע אמין יותר לגבי המאורע, מאשר בגרסאות הקודמות.
+</p>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="contact" class="section">
@@ -135,15 +140,30 @@ ans
 <h1>
     Contact Me
 </h1>
-<form action=”mailto:eitan.chertok@gmail.com” method="POST" enctype=”text/plain” name=”EmailForm”>
-E-mail:<br>
-<input type="text" name="mail"><br><br>
-Name:<br>
-<input type=”text” size=”19″ name=”ContactName”><br><br>
-Message:<br> 
-<input type="text" name=”message”>
-<br><br> <button type=”submit”>Submit</button>
-</form>
+<form action="mailto:eitan.chertok@gmail.com" method="post" enctype="text/plain" dir="rtl">
+    שם:<br>
+    <input type="text" name="name"><br>
+    כתובת מייל:<br>
+    <input type="text" name="email"><br>
+    הודעה:<br>
+    <textarea name="message" cols="40" rows="5"></textarea>
+    <br><br>
+    בחר אימוג׳י שברצונך להוסיף להודעה:
+    <br>
+    <input type="radio" id="emojiChoice1"
+     name="emoji" value="&#128515">
+    <label for="emojiChoice1">&#128515</label>
+
+    <input type="radio" id="emojiChoice2"
+     name="emoji" value="&#128514">
+    <label for="emojiChoice2">&#128514</label>
+
+    <input type="radio" id="emojiChoice3"
+     name="emoji" value="&#128512">
+    <label for="emojiChoice3">&#128512</label>
+    <br><br>
+    <input type="submit" value="Send">
+    </form>
 <br/>
 <br/>
 <br/>
