@@ -5,10 +5,11 @@
     left: 0;
     right: 0;
 	width: 100%;
-	height: 40px;
-	background-color: aqua;
-
+	height: 48px;
+	background-color: #AC7D88;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
 
 .menuButton
 {
@@ -31,6 +32,11 @@
     color: black;
 }
 
+.p
+{
+    font-family: "David";
+    font-size: 20px;
+}
 section
 {
     text-align: center;
@@ -40,12 +46,19 @@ section
 
 h1
 {
-    color: black;
+    display: block;
+    font-size: 4em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: Apple Chancery, cursive
 }
 
 html
 {
-    background-color:aquamarine;
+    background-color:#F8ECD1;
     padding: 0px;
     margin: 0px;
     border: 0ch;
@@ -60,4 +73,9 @@ table
 {
     margin-left: auto;
     margin-right: auto;
+}
+
+hr
+{
+    border-top: 1px solid gray;
 }
