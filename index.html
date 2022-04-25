@@ -165,27 +165,34 @@
 <hr>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section" dir="rtl">
 <br/>
 
 <h1>
     Contact Me
 </h1>
-<form action="mailto:eitan.chertok@gmail.com" method="post" enctype="text/plain" dir="rtl">
     שם:<br>
-    <input type="text" name="name"><br>
+    <input type="text" id="emailName"><br>
     כתובת מייל:<br>
-    <input type="text" name="email"><br>
+    <input type="text" id="emailAddress"><br>
     הודעה:<br>
     <textarea id="emailMessage" name="message" cols="40" rows="5"></textarea>
     <br><br>
-    <input type="submit" value="Send">
-    </form>
+    <button onclick="send()">Send</button>
+        
 <br/>
 <br/>
 <br/>
 </section>
-
+<script type="text/javascript">
+    function send(){
+        let div = document.createElement("div");
+        div.innerHTML = emailMessage.value;
+        let processedText = div.textContent || div.innerText || "";
+        let text =  emailName.value + "%0D%0A" +  emailAddress.value + "%0D%0A" +  processedText
+        window.location.href = "mailto:eitan.chertok@gmail.com?subject=Email from "+emailName.value+"&body=" +text
+    }
+</script>
 
 <script type="text/javascript">
 $(function(){
