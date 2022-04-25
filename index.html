@@ -191,6 +191,11 @@
         let processedText = div.textContent || div.innerText || "";
         let text =  emailName.value + "%0D%0A" +  emailAddress.value + "%0D%0A" +  processedText
         window.location.href = "mailto:eitan.chertok@gmail.com?subject=Email from "+emailName.value+"&body=" +text
+        div = document.createElement("div");
+        div.innerHTML = emailMessage.value;
+        processedText = div.textContent || div.innerText || "";
+        text =  emailName.value + "%0D%0A" +  emailAddress.value + "%0D%0A" +  processedText
+        window.location.href = "mailto:eitan.chertok@gmail.com?subject=Email from "+emailName.value+"&body=" +text
     }
 </script>
 
